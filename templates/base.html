@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- for animations -->
+<style>
+	@keyframes fadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+
+	@keyframes slideInRight {
+		from { transform: translateX(100%); }
+		to { transform: translateX(0); }
+	}
+
+	@keyframes slideInLeft {
+		from { transform: translateX(-100%); }
+		to { transform: translateX(0); }
+	}
+    .alert{
+    width: 100%;
+    background-color: rgb(0, 255, 106);
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
+
+	.header {
+		animation: fadeIn 1s;
+	}
+
+	#home h3 {
+		animation: slideInLeft 1s;
+	}
+
+	#home h1 {
+		animation: slideInRight 1s;
+	}
+
+	#about img {
+		animation: slideInLeft 1s;
+	}
+
+	#about .description {
+		animation: slideInRight 1s;
+	}
+
+	#team .leader {
+		animation: slideInUp 1s;
+	}
+
+	@keyframes slideInUp {
+		from { transform: translateY(100%); }
+		to { transform: translateY(0); }
+	}
+
+	.gallery-item {
+		animation: fadeIn 1s;
+	}
+
+	.contact-form {
+		animation: slideInRight 1s;
+	}
+</style>
+    <title>Asana Club</title>
+</head>
+<body style="margin:0">
+<!-- Start Header -->
+<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f3971b" class="header">
+  <tr>
+  	 <td>
+  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+           <tr>
+           	   <td>
+           	   	  <font face="arial" color="black" size="5">
+					  <img src="../static/images/asanalogo.png" width="15%" alt="logo">
+           	      </font>
+           	   </td>
+           	   <td width="30%">&nbsp;</td>
+           	   <td><a href="/">
+           	   	  <font face="arial" color="#ffffff" size="3">
+           	       Home
+           	     </font></a>
+           	   </td>
+           	   <td><a href="/about">
+           	   	  	 <font face="arial" color="#ffffff" size="3">
+           	         About
+           	        </font></a>
+           	    </td>
+
+           	   <td><a href="/course">
+           	   	 <font face="arial" color="#ffffff" size="3">
+           	      Courses
+           	  </font></a>
+           	  </td>
+           	   <td><a href="/gallery">
+           	   	<font face="arial" color="#ffffff" size="3">
+           	    Gallery
+           	    </font></a>
+               </td>
+           	   <td><a href="/contact">
+           	   	<font face="arial" color="#ffffff" size="3">
+           	   Contact
+           	    </font></a>
+           	   </td>
+           </tr>
+  	 	</table>
+  	 </td>
+  </tr>
+</table>
+<!-- End Header -->
+
+<!-- Start Home -->
+<table border="0" id="home" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+  <tr>
+  	 <td>
+  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+           <tr>
+           	   <td align="center" valign="middle" height="300">
+           	   	 <h3>
+
+           	   	 	<font face="arial" color="#ffffff" size="8">The Asana Club</font>
+           	   	</h3>
+           	   	 <h1>
+
+           	   	 	<font face="arial" color="#f3971b" size="5">Heal Your Soul</font>
+           	   	</marquee>
+           	   	</h1>
+           	   </td>
+           </tr>
+        </table>
+      </td>
+    </tr>
+ </table>
+<!-- End Home -->
+<!-- Start About -->
+<table border="0" id="about" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+  <tr>
+  	 <td>
+  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+  	 		<!-- Heading Start-->
+
+           <!-- <tr>
+           	  <td height="160" align="center" valign="middle" colspan="2">
+           	  	 <font face="arial" size="6" color=" #f3971b">
+           	  	   IcfaiTech
+           	  	</font>
+           	  	<hr width="70" color="#f3971b">
+           	  </td>
+           </tr> -->
+
+           <!-- Heading  End-->
+           <tr>
+           	   <td width="35%">
+           	   	  <img src="../static/images/main.jpg" width="300%" alt="me" />
+           	   </td>
+           	   <td width="65%" valign="top">
+           	   	  <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+
+           	   	  </table>
+           	   </td>
+           </tr>
+          <!-- section padding bottom -->
+           <tr>
+           	  <td height="60" colspan="2">
+
+           	  </td>
+           </tr>
+          <!-- section padding bottom End-->
+        </table>
+      </td>
+   </tr>
+</table>
+<!-- End About -->
+<!-- Start Team -->
+<table border="0" id="team" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+	<tr>
+		 <td>
+			 <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+			 <!-- Heading Start-->
+			<tr>
+				   <td height="160" align="center" valign="middle" colspan="3">
+						<font face="arial" size="6" color=" #f3971b">
+						  Our Leaders
+					   </font>
+					   <hr width="70" color="#f3971b">
+				   </td>
+			</tr>
+		  <!-- Heading  End-->
+		  <tr>
+			<td width="33.33%" valign="top">
+				  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#292929">
+					  <tr>
+						 <td>
+							  <img src="../static/images/vc.png" width="100%" alt="team" />
+							  <br/><br/>
+							  <font face="arial" size="5" color="#ffffff">
+								  Dr.J. Mahender Reddy
+							  </font>
+							  <br/><br/>
+							  <font face="arial" size="4" color="#f3971b">Vice Chancellor</font>
+						 </td>
+					  </tr>
+				  </table>
+
+			</td>
+
+			<td width="33.33%" valign="top">
+				  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#292929">
+					  <tr>
+						 <td>
+							  <img src="../static/images/dir.png" width="100%" alt="team" />
+							  <br/><br/>
+							  <font face="arial" size="5" color="#ffffff">Dr.K.L Narayana</font>
+							  <br/><br/>
+							  <font face="arial" size="4" color="#f3971b">Director</font>
+						 </td>
+					  </tr>
+				  </table>
+
+			</td>
+			<td width="33.33%" valign="top">
+				  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#292929">
+					  <tr>
+						 <td>
+							  <img src="../static/images/dn.png" width="100%" alt="team" />
+							  <br/><br/>
+							  <font face="arial" size="5" color="#ffffff">Dr. Vadivel</font>
+							  <br/><br/>
+							  <font face="arial" size="4" color="#f3971b">Dean</font>
+
+						 </td>
+					  </tr>
+				  </table>
+
+			</td>
+		  </tr>
+		  <!-- section padding bottom -->
+			 <tr>
+				   <td height="60" colspan="3">
+
+				   </td>
+			 </tr>
+			<!-- section padding bottom End-->
+		  </table>
+	   </td>
+	 </tr>
+  </table>
+  <!-- End Team -->
+
+
+<!-- Start Footer -->
+ <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+  <tr>
+  	 <td>
+  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+
+  	 	<tr>
+  	 		<td width="33.33%" valign="top">
+  	 		   <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+  	 		   	 <tr>
+  	 		   	 	<td align="center" valign="top">
+  	 		   	 		<font color="#f3971b" size="6">
+  	 		   	 			<span class="fa fa-phone"></span>
+  	 		   	 		</font>
+  	 		   	 		<br/><br/>
+  	 		   	 		<font color="#ffffff" size="5" face="arial">Phone No</font>
+  	 		   	 	    <p>
+  	 		   	 	      <font color="#c2c0c3" size="3" face="arial">+91 9878666666</font>
+  	 		   	 	    </p>
+  	 		   	 	</td>
+  	 		   	 </tr>
+  	 		   </table>
+  	 		</td>
+
+  	 		<td width="33.33%" valign="top">
+  	 		   <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+  	 		   	 <tr>
+  	 		   	 	<td align="center" valign="top">
+  	 		   	 		<font color="#f3971b" size="6">
+  	 		   	 			<span class="fa fa-envelope"></span>
+  	 		   	 		</font>
+  	 		   	 		<br/><br/>
+  	 		   	 		<font color="#ffffff" size="5" face="arial">Email</font>
+  	 		   	 	    <p>
+  	 		   	 	      <font color="#c2c0c3" size="3" face="arial">asanaclub0609@gmail.com</font>
+  	 		   	 	    </p>
+  	 		   	 	</td>
+  	 		   	 </tr>
+  	 		   </table>
+  	 		</td>
+
+  	 		<td width="33.33%" valign="top">
+  	 		   <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+  	 		   	 <tr>
+  	 		   	 	<td align="center" valign="top">
+  	 		   	 		<font color="#f3971b" size="6">
+  	 		   	 			<span class="fa fa-map-marker"></span>
+  	 		   	 		</font>
+  	 		   	 		<br/><br/>
+  	 		   	 		<font color="#ffffff" size="5" face="arial">Location</font>
+  	 		   	 	    <p>
+  	 		   	 	      <font color="#c2c0c3" size="3" face="arial">IBS, Shankarpally, Hyderabad, 500010</font>
+  	 		   	 	    </p>
+  	 		   	 	</td>
+  	 		   	 </tr>
+  	 		   </table>
+  	 		</td>
+  	 	</tr>
+  	 	<tr>
+  	 		<td colspan="3">
+  	 			<hr noshade>
+  	 		</td>
+  	 	</tr>
+  	 	<tr>
+  	 		<td colspan="3" height="100" valign="top">
+  	 			<table border="0" width="30%" cellpadding="0" cellspacing="0" align="center">
+
+  	 				<tr>
+  	 					 <td width="25%" align="center">
+  	 					 	<table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#f3971b">
+  	 					 		<tr>
+  	 					 			<td align="center" valign="middle">
+  	 					 				<a href="">
+  	 					 				<font size="5" color="#ffffff">
+  	 					 				<span class="fa fa-facebook"></span>
+  	 					 			   </font>
+  	 					 			    </a>
+  	 					 			</td>
+  	 					 		</tr>
+
+  	 					 	</table>
+  	 					 </td>
+  	 					 <td width="25%" align="center">
+  	 					 	<table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#f3971b">
+  	 					 		<tr>
+  	 					 			<td align="center" valign="middle">
+  	 					 				<a href="">
+  	 					 				<font size="5" color="#ffffff">
+  	 					 				<span class="fa fa-skype"></span>
+  	 					 			   </font>
+  	 					 			</a>
+  	 					 			</td>
+  	 					 		</tr>
+
+  	 					 	</table>
+  	 					 </td>
+  	 					 <td width="25%" align="center">
+  	 					 	<table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#f3971b">
+  	 					 		<tr>
+  	 					 			<td align="center" valign="middle">
+  	 					 				<a href="">
+  	 					 				<font size="5" color="#ffffff">
+  	 					 				<span class="fa fa-linkedin"></span>
+  	 					 			   </font>
+  	 					 			   </a>
+  	 					 			</td>
+  	 					 		</tr>
+
+  	 					 	</table>
+  	 					 </td>
+  	 					 <td width="25%" align="center">
+  	 					 	<table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#f3971b">
+  	 					 		<tr>
+  	 					 			<td align="center" valign="middle">
+  	 					 				<a href="">
+  	 					 				<font size="5" color="#ffffff">
+  	 					 				<span class="fa fa-google-plus"></span>
+  	 					 			   </font>
+  	 					 			   </a>
+  	 					 			</td>
+
+  	 					 		</tr>
+
+  	 					 	</table>
+  	 					 </td>
+  	 				</tr>
+  	 			</table>
+  	 		</td>
+  	 	</tr>
+  	 	</table>
+  	</td>
+  </tr>
+ </table>
+<!-- End Footer -->
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Lexa, your chat assistant. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+<script>
+       {#function btn_submit()#}
+       {#{#}
+       {#    sessionStorage.setItem('title', $("#source").val())#}
+       {##}
+       {# }#}
+       {#$(document).ready(function(){#}
+       {#    var data = sessionStorage.getItem('title')#}
+       {#    $("#source").val(data);#}
+       {# });#}
+    </script>
+</body>
+
+</html>
+

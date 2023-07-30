@@ -1,0 +1,11 @@
+Position,Level,Salary,Age,Gender,City
+Business Analyst,1,45000,40,F,Hyderabad
+Junior Consultant,2,50000,50,M,Mumbai
+Senior Consultant,3,60000,30,F,Pune
+Manager,4,80000,45,M,Delhi
+Country Manager,5,110000,25,M,Goa
+Region Manager,6,150000,37,F,Banglore
+Partner,7,200000,42,F,Chennai
+Senior Partner,8,300000,44,F,Kolkata
+C-level,9,500000,52,M,Bhuvneshwar
+CEO,10,1000000,55,M,Patna
